@@ -1,0 +1,85 @@
+<% var data = { title: "Перемена" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<body>
+  <div class="container">
+    <section class="preview">
+      <img class="preview__back" src="img/back.svg" alt="#" />
+      <div class="preview__desc">
+        <h1 class="preview__text">
+          «Перемена»‎ - современная платформа для<br />онлайн-обучения!
+        </h1>
+        <a href="#" class="preview__button">Войти</a>
+      </div>
+      <div class="preview__img">
+        <img src="img/objects.svg" alt="#" />
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <section class="role">
+      <a class="role__item" href="#">
+        <img src="img/teachers.svg" alt="#" />
+        <p class="role__title">Для учителей</p>
+      </a>
+      <a class="role__item" href="#">
+        <img src="img/students.svg" alt="#" />
+        <p class="role__title">Для учеников</p>
+      </a>
+    </section>
+  </div>
+
+  <section class="about">
+    <h2 class="section__title">О нас</h2>
+    <div class="about__back"><img src="img/about.png" alt="" /></div>
+    <p class="about__desc">
+      «Перемена»‎ - платформа, направленная на помощь в проведении
+      дистанционного обучения. Для учителей больше нет нужды проверять сотни
+      тетрадей, а школьники могут посмотреть все домашние задания в одном месте!
+    </p>
+  </section>
+
+  <div class="container">
+    <section class="advantage">
+      <h2 class="section__title">Преимущества</h2>
+      <ul class="advantage__items">
+        <li class="advantage__item">
+          <div class="advantage__icon">
+            <img src="img/books.png" alt="Домашнее задание">
+          </div>
+          <h3 class="advantage__title">
+            Домашнее задание
+          </h3>
+          <p class="advantage__text">
+            Теперь не нужно искать домашнее задание - оно будет приложено к каждому уроку
+          </p>
+        </li>
+        <li class="advantage__item">
+          <div class="advantage__icon">
+            <img src="img/bell.png" alt="Уведомления">
+          </div>
+          <h3 class="advantage__title">
+            Уведомления
+          </h3>
+          <p class="advantage__text">
+            Получайте уведомления об изменениях в расписании или о проверке домашнего задания
+          </p>
+        </li>
+        <li class="advantage__item">
+          <div class="advantage__icon">
+            <img src="img/onlinestud.png" alt="Онлайн-занятия">
+          </div>
+          <h3 class="advantage__title">
+            Онлайн-занятия
+          </h3>
+          <p class="advantage__text">
+            Больше нет нужды искать каждый раз ссылки на проведение онлайн-занятия - теперь они закреплены к каждому уроку в одном месте
+          </p>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
