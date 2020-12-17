@@ -119,6 +119,9 @@ body {
 		&:hover {
 			transform: scale(1.03);
 		}
+		&:visited {
+			color: black;
+		}
 	}
 	&__title {
 		text-align: center;
