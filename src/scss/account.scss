@@ -19,6 +19,7 @@
         display: flex;
         align-items: center;
         margin-right: 50px;
+        color: black;
         &::before {
             content: url(../img/logout.svg);
             margin-right: 5px;
@@ -37,6 +38,9 @@
     border-radius: 10px;
     &:hover {
         background-color: #6f6be6;
+    }
+    &:visited {
+        color: #fff;
     }
 }
 /*-------------------*/
@@ -81,6 +85,7 @@
         align-items: center;
         line-height: 16px;
         margin-bottom: 20px;
+        align-items: flex-start;
         &::before {
             content: '\276E';
             font-size: 22px;
@@ -88,7 +93,7 @@
         }
     }
 
-    .lesson {
+    .lesson,.form-lesson {
         padding: 40px 100px;
         background: #FFFFFF;
         box-shadow: 0px 22px 44px -15px rgba(236, 237, 254, 0.49);
@@ -103,11 +108,15 @@
             font-weight: 600;
             line-height: 28px;
             margin-bottom: 20px;
-            &::after {
+            span {
                 content: url(../img/pen.svg);
                 font-size: 22px;
                 margin-right: 15px;
                 cursor: pointer;
+                transition: ease-in 0.2s;
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
         }
         &__theme {
@@ -115,6 +124,34 @@
             margin-bottom: 40px;
         }
     }
+
+    .form-lesson {
+        display: flex;
+        flex-direction: row;
+        input {
+            border: 1px solid #9B9B9B;
+            border-radius: 5px;
+            width: 300px;
+            height: 40px;
+            padding: 0 10px;
+            &:focus {
+                border: 1px solid #7A76FF;
+                color: #7A76FF;
+            }
+        }
+        &__theme {
+            margin-bottom: 20px;
+        }
+        input.form-lesson__button {
+            width: 200px;
+            height: 40px;
+            justify-content: center;
+            margin-top: 48px;
+            margin-left: 56px;
+            cursor: pointer;
+        }
+    }
+
     .homework {
         display: flex;
         flex-direction: column;
