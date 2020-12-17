@@ -1,3 +1,4 @@
+@import "account";
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 $font-stack: 'Rubik', sans-serif;
 /*Обнуление*/
@@ -30,7 +31,7 @@ input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none; color: black;}
+a, a:visited{text-decoration: none; color: #fff;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
@@ -42,7 +43,7 @@ body {
   font-family: $font-stack;
   color: #272443;
   position: relative;
-  background-color: #fff;
+  background-color: #FAFAFA;
   max-width: 1920px;
   overflow-x: hidden;
   .container {
@@ -57,6 +58,10 @@ body {
 	box-shadow: 0px 20px 44px -15px rgba(122, 118, 255, 0.22);
 	padding: 10px 44px;
 	background-color: #fff;
+	.logo img {
+		width: 130px;
+        height: 30px;
+	}
 }
 
 .preview {

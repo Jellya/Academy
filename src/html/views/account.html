@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Личный кабинет учителя</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <link rel="icon" type="image/png" href="favicon/favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-account">
+        <a href="#" class="notification button">
+          <img src="img/notification.svg" alt="#" />
+        </a>
+        <a href="#" class="logout"> Выйти </a>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <a class="logo" href="index.html"
+        ><img src="img/logo.svg" alt="Платформа для обучения Перемена"
+      /></a>
+      <p class="name">Мария <br />Иванова</p>
+      <a href="#" class="calendar button">Расписание</a>
+    </aside>
+
+    <div class="content">
+      <a href="javascript:history.back()" class="navigation">Назад</a>
+      
+      <div class="lesson" id="lesson">
+        <p class="lesson__title">Алгебра, 9 "А" <span id="edit"></span></p>
+        <p class="lesson__theme">
+          Тема: Четные и нечетные функции: графики и свойства
+        </p>
+        <p class="lesson__format">Онлайн-занятие</p>
+      </div>
+
+      <form name="lesson" class="form-lesson" id="form-lesson">
+        <div class="form-lesson__fields">
+          <p class="form-lesson__title">Алгебра, 9 "А"</p>
+          <p class="form-lesson__theme">
+            <input type="text" name="lesson-theme" placeholder="Тема урока" />
+          </p>
+          <p class="form-lesson__format">
+            <input
+              type="text"
+              name="lesson-format"
+              placeholder="Ссылка на урок"
+            />
+          </p>
+        </div>
+        <input
+          type="submit"
+          name="lesson-button"
+          value="Cохранить"
+          class="form-lesson__button button"
+          id="lesson-button"
+        />
+      </form>
+
+      <div class="homework">
+        <h2 class="homework__title">Домашние задания</h2>
+        <div class="homework-empty">
+          <img src="img/nohomework.svg" alt="Ничего не задано" />
+          <p class="homework__subtitle">У вас нет домашних заданий!</p>
+        </div>
+      </div>
+
+    </div>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
