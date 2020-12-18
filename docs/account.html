@@ -24,21 +24,19 @@
       <div class="lesson" id="lesson">
         <p class="lesson__title">Алгебра, 9 "А" <span id="edit"></span></p>
         <p class="lesson__theme">Тема: Четные и нечетные функции: графики и свойства</p>
-        <p class="lesson__format">Онлайн-занятие</p>
+        <a class="lesson__format" href="#"><p>Онлайн-занятие</p></a>
       </div>
       <form name="lesson" class="form-lesson" id="form-lesson">
-        <div class="form-lesson__fields">
-          <p class="form-lesson__title">Алгебра, 9 "А"</p>
-          <p class="form-lesson__theme"><input name="lesson-theme" placeholder="Тема урока" /></p>
-          <p class="form-lesson__format"><input name="lesson-format" placeholder="Ссылка на урок" /></p>
+        <p class="form-lesson__title">Алгебра, 9 "А"</p>
+        <div class="form-lesson__block">
+          <div class="form-lesson__fields">
+            <p class="form-lesson__theme"><input name="lesson-theme" placeholder="Тема урока" /></p>
+            <p class="form-lesson__format"><input name="lesson-format" placeholder="Ссылка на урок" /></p>
+          </div>
+          <div class="form-lesson__button">
+            <input type="submit" name="lesson-button" value="Cохранить" class="button" id="lesson-button" />
+          </div>
         </div>
-        <input
-          type="submit"
-          name="lesson-button"
-          value="Cохранить"
-          class="form-lesson__button button"
-          id="lesson-button"
-        />
       </form>
       <div class="homework">
         <h2 class="homework__title">Домашние задания</h2>
